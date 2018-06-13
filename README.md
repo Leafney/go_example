@@ -15,7 +15,7 @@
 ##### strings
 * [golang中strings包用法 - CSDN博客](https://blog.csdn.net/chenbaoke/article/details/40318423)
 
-##### HMAC的SHA1加密 md5
+##### HMAC的SHA1加密 md5 -- sha1md5.go
 * [Golang之HMAC的SHA1加密](http://www.nljb.net/default/Golang%E4%B9%8BHMAC%E7%9A%84SHA1%E5%8A%A0%E5%AF%86/)
 * [Golang对字符串进行SHA1哈希运算的代码,Go语言代码片段分享, - 脚本分享网](http://www.sharejs.com/codes/go/7303)
 
@@ -23,12 +23,14 @@
 * [Go语言实战笔记（十八）| Go log 日志 | 飞雪无情的博客](http://www.flysnow.org/2017/05/06/go-in-action-go-log.html)
 * [go语言记log：log,logger | Legendtkl](http://legendtkl.com/2016/03/11/go-log/)
 
-##### 交叉编译
+##### 交叉编译 -- crosscompile.go
 
 * [golang mac 交叉编译linux， linux无法运行 - SegmentFault 思否](https://segmentfault.com/q/1010000011760900)
 
-
 ##### email
+
+* [Golang：使用自定义模板发送邮件 | Oopsguy](http://oopsguy.com/2017/10/11/sending-emails-with-golang/)
+* [golang 通过 qq 开通smtp 发送邮件的 全步骤（tls +ssl） 原 golang 通过 qq 开通smtp 发送邮件的 全步骤（tls +ssl） lwtcumt – 技术成就梦想](http://sparkgis.com/uncategorized/2018/01/golang-%E9%80%9A%E8%BF%87-qq-%E5%BC%80%E9%80%9Asmtp-%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E7%9A%84-%E5%85%A8%E6%AD%A5%E9%AA%A4%EF%BC%88tls-ssl%EF%BC%89-%E5%8E%9F-golang-%E9%80%9A%E8%BF%87-qq-%E5%BC%80/)
 
 ##### gjson
 
@@ -54,8 +56,22 @@ flag包实现了命令行参数的解析
 * [Golang之使用Cobra - 陈健的博客 | ChenJian Blog](https://o-my-chenjian.com/2017/09/20/Using-Cobra-With-Golang/)
 * [Cobra - 一个 Golang 命令行项目生成工具 | Jsharkc's secret](https://jsharkc.github.io/2017/07/17/cobra%E5%85%A5%E9%97%A8%E5%B0%8F%E6%95%99%E7%A8%8B/)
 
+###### cli
+
+* [urfave/cli: A simple, fast, and fun package for building command line apps in Go](https://github.com/urfave/cli)
+* [用golang来编写cli程序吧，Happy~](https://zhuanlan.zhihu.com/p/30649549)
+* [使用Cli构建Go的命令行应用 | jasper的blog](http://www.opscoder.info/cli.html)
 
 ##### fmt.Sprintf
+
+
+##### UPX
+
+1. -ldflags ???
+
+
+* [UPX: the Ultimate Packer for eXecutables - Homepage](https://upx.github.io/)
+* [centos下安装UPX+压缩golang可执行程序 - Go语言中文网 - Golang中文社区](https://studygolang.com/articles/10763)
 
 
 
