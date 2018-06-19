@@ -179,6 +179,11 @@ CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -o gowins.exe
 
 Todo 用golang写windows服务时需要获取管理员权限才能进行操作
 
+##### 日志 log
+
+* [15125505/zlog: 一个用于go语言的log模块。](https://github.com/15125505/zlog)
+* [在Github中最受欢迎的Go日志库集合 - Go开发社区 | CTOLib码库](https://www.ctolib.com/topics-123640.html)
+
 
 
 
