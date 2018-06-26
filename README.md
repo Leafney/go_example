@@ -116,7 +116,6 @@ func main() {
 
 * [ouqiang/gocron: 定时任务管理系统](https://github.com/ouqiang/gocron)
 
-
 ##### time
 
 ```
@@ -167,6 +166,7 @@ golang windows程序获取管理员权限（UAC ）
 </assembly>
 ```
 
+注意：只需要更改 `name="gowins.exe"` 这一项即可，其他的无需更改，无论x86系统还是x64系统均适用，否则无法正常执行。
 
 ```
 go get github.com/akavel/rsrc
@@ -181,10 +181,71 @@ Todo 用golang写windows服务时需要获取管理员权限才能进行操作
 
 ##### 日志 log
 
-* [15125505/zlog: 一个用于go语言的log模块。](https://github.com/15125505/zlog)
 * [在Github中最受欢迎的Go日志库集合 - Go开发社区 | CTOLib码库](https://www.ctolib.com/topics-123640.html)
+* go-logging -- [op/go-logging: Golang logging library](https://github.com/op/go-logging)
+* [issue9/logs: 基于 xml 配置的日志系统](https://github.com/issue9/logs)
+
+###### log
+
+* [Go语言实战笔记（十八）| Go log 日志 | 飞雪无情的博客](http://www.flysnow.org/2017/05/06/go-in-action-go-log.html)
+* [Golang 优化之路——自己造一个日志轮子](http://blog.cyeam.com/golang/2017/07/14/go-log)
+
+###### zlog
+
+* zlog -- [15125505/zlog: 一个用于go语言的log模块。](https://github.com/15125505/zlog)
+
+安装：
+
+```
+go get github.com/15125505/zlog/log
+
+go get -u github.com/15125505/zlog/log
+```
+
+使用:
+
+```
+package main
+
+import "github.com/15125505/zlog/log"
+
+func main() {
+	log.Log.SetLogFile("logs/filename") // 加入这行代码，就可以写日志文件了
+	log.Debug("Some debug info...")
+	log.Info("Some infomation...")
+	log.Notice("Some notice...")
+	log.Error("Error info...")
+}
+```
+
+##### 后台执行
+
+* [CodyGuo/godaemon: Run golang app as background program, 以后台形式运行golang](https://github.com/codyguo/godaemon)
+* [golang 另类方法后台运行程序（linux、windows） - CSDN博客](https://blog.csdn.net/CodyGuo/article/details/53939291)
+
+##### 热更新
+
+* [Golang热加载配置实践 - CSDN博客](https://blog.csdn.net/chenwenhao0304/article/details/49977395)
+* [golang配置文件熱更新 - IT閱讀](http://www.itread01.com/articles/1488092299.html)
+* 前面两个结合着看
+* [John/gf: 模块化、松耦合、轻量级、高性能的Go语言Web开发框架。支持热重启、热更新、多域名、多端口、多服务、HTTP/HTTPS、动态路由等特性，并提供了Web服务开发的系列核心组件，如：MVC、Cookie、Session、服务注册、配置管理、模板引擎、数据校验、分页管理、数据库ORM等等等等，并且提供了数十个实用开发模块集，如：缓存、日志、命令行、二进制、文件锁、数据编码、进程管理、进程通信、并发安全容器、Goroutine池等等等等等等。](https://gitee.com/johng/gf)
+* [Golang热更新 · Issue #39 · dongjun111111/blog](https://github.com/dongjun111111/blog/issues/39)
+* [facebookgo/grace: Graceful restart & zero downtime deploy for Go servers.](https://github.com/facebookgo/grace)
+* [rcrowley/goagain: Zero-downtime restarts in Go](https://github.com/rcrowley/goagain)
+* [用Go自己实现配置文件热加载功能 - 云+社区 - 腾讯云](https://cloud.tencent.com/developer/article/1079571) **感觉这个可以**
+* [silenceper/gowatch: go程序热编译工具，提升开发效率](https://github.com/silenceper/gowatch)
+
+#### email
+
+##### net/mail
 
 
+##### gomail
+
+* [Golang 使用gomail包发送邮件 - CSDN博客](https://blog.csdn.net/wj199395/article/details/75206501)
+* [go-gomail/gomail: The best way to send emails in Go.](https://github.com/go-gomail/gomail)
+
+***
 
 
 
