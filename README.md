@@ -3,6 +3,7 @@
 #### 参考
 
 * [Go 标准库 中文参考](https://wizardforcel.gitbooks.io/golang-stdlib-ref/content/)
+* [Golang好用的库](https://jimmysong.io/go-practice/docs/golang_library.html)
 
 
 #### 常用
@@ -218,6 +219,10 @@ func main() {
 }
 ```
 
+###### seelog
+
+* [cihub/seelog: Seelog is a native Go logging library that provides flexible asynchronous dispatching, filtering, and formatting.](https://github.com/cihub/seelog)
+
 ##### 后台执行
 
 * [CodyGuo/godaemon: Run golang app as background program, 以后台形式运行golang](https://github.com/codyguo/godaemon)
@@ -247,6 +252,97 @@ func main() {
 
 ***
 
+#### 配置文件
+
+##### TOML
+
+* [toml-lang/toml: Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml)
+* [TOML： GitHub 这是要革 YAML 的命呀！ - SegmentFault 业界资讯 - SegmentFault 思否](https://segmentfault.com/a/1190000000477752)
+* [BurntSushi/toml: TOML parser for Golang with reflection.](https://github.com/BurntSushi/toml) **不错**
+* [Golang TOML Configs Example: MySQL Connection - JonathanMH](https://jonathanmh.com/golang-toml-configs-example-mysql-connection/)
+* [koding/multiconfig: Load configuration from multiple sources in Go](https://github.com/koding/multiconfig)
+
+##### viper
+
+viper太重量级，使用viper时你需要pull另外20个viper依赖的第三方包 ???
+
+* [spf13/viper: Go configuration with fangs](https://github.com/spf13/viper)
+* [Golang的配置信息处理框架Viper-RecallSong的博客-51CTO博客](http://blog.51cto.com/13599072/2072753)
+* [Golang程序配置方案小结 | Tony Bai](https://tonybai.com/2015/07/01/config-solutions-for-golang-app/)
+* [PhalGo-Viper获取配置 - Go语言中文网 - Golang中文社区](https://studygolang.com/articles/4244)
 
 
+##### yaml
+
+* [go-yaml/yaml: YAML support for the Go language.](https://github.com/go-yaml/yaml)
+* [Go 处理yaml类型的配置文件 - 后端 - 掘金](https://juejin.im/entry/5ae29326518825670c45a5b7)
+* [kylelemons/go-gypsy: Go YAML Parser for Simple YAML](https://github.com/kylelemons/go-gypsy)
+* [Go实战--go语言中使用YAML配置文件(与json、xml、ini对比) - CSDN博客](https://blog.csdn.net/wangshubo1989/article/details/73784907)
+
+
+##### go test
+
+* [go test 初始化--- TestMain的使用 - CSDN博客](https://blog.csdn.net/lanyang123456/article/details/79776410)
+
+
+##### os
+
+```
+// check directory exist
+func IsDirExist(path string) bool {
+	file, err := os.Stat(path)
+
+	if err != nil {
+		return os.IsExist(err)
+	} else {
+		return file.IsDir()
+	}
+}
+
+// check file exist
+func IsFileExist(filePath string) bool {
+	_, err := os.Stat(filePath)
+	return err == nil || os.IsExist(err)
+}
+
+```
+
+##### fsnotify
+
+* [fsnotify/fsnotify: Cross-platform file system notifications for Go.](https://github.com/fsnotify/fsnotify)
+* [golang 通过fsnotify监控文件，并通过文件变化重启程序 - 怀素真 - 博客园](https://www.cnblogs.com/jkko123/p/7256927.html)
+* [viper/viper.go at master · spf13/viper](https://github.com/spf13/viper/blob/master/viper.go#L261)
+* [GoLang fsnotify 实现目录中日志文件大小监控 - 川川籽 - 博客园](https://www.cnblogs.com/yzhch/p/6420625.html)
+* [Examples: File monitoring with Golang](https://noypi-linux.blogspot.com/2014/07/file-monitoring-with-golang_4.html)
+* [golang 通过fsnotify监控文件，并通过文件变化重启程序 - 怀素真 - 博客园](https://www.cnblogs.com/jkko123/p/7256927.html)
+
+
+##### howeyc/fsnotify
+
+howeyc/fsnotify fork version 增加了新的api
+
+For each event:
+
+Name
+IsCreate()
+IsDelete()
+IsModify()
+IsRename()
+
+* [howeyc/fsnotify: File system notification for Go](https://github.com/howeyc/fsnotify)
+* [Go语言监控文件变化小程序. - Go开发社区 | CTOLib码库](https://www.ctolib.com/topics-5472.html)
+
+##### 配置文件热更新
+
+* [Golang configuration file hot update](http://www.fatalerrors.org/a/golang-configuration-file-hot-update.html) **例子**
+* [Golang hot configuration reload](http://openmymind.net/Golang-Hot-Configuration-Reload/)
+* [golang配置文件热更新 - 挖坑笔记 - SegmentFault 思否](https://segmentfault.com/a/1190000008487440)
+* [Golang学习--TOML配置处理 - 疯狂的原始人 - 博客园](http://www.cnblogs.com/CraryPrimitiveMan/p/7928647.html)
+
+
+##### golang中文件以及文件夹路径相关操作
+
+* [Go实战--golang中文件以及文件夹路径相关操作 - CSDN博客](https://blog.csdn.net/wangshubo1989/article/details/77933654)
+
+***
 
