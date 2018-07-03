@@ -362,3 +362,40 @@ IsRename()
 
 ***
 
+##### orm
+
+###### xorm
+
+
+* [首页 - xorm: 简单而强大的 Go 语言ORM框架](http://xorm.io/)
+* [首页 |](http://gobook.io/read/github.com/go-xorm/manual-zh-CN/)
+* [go-xorm/xorm: Simple and Powerful ORM for Go, support mysql,postgres,tidb,sqlite3,mssql,oracle](https://github.com/go-xorm/xorm)
+* [Golang解决XORM的时区问题 - Go中国技术社区 - golang](https://gocn.vip/article/566)
+
+###### gorm
+
+* [GORM - The fantastic ORM library for Golang, aims to be developer friendly.](http://gorm.io/)
+* [golang orm 框架之 gorm - 个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000013216540)
+* [jinzhu/gorm: The fantastic ORM library for Golang, aims to be developer friendly](https://github.com/jinzhu/gorm)
+
+###### Beego orm
+
+* [使用beedb库进行ORM开发 · Build web application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/zh/05.5.html)
+* [ORM 使用 - beego: 简约 & 强大并存的 Go 应用框架](https://beego.me/docs/mvc/model/orm.md)
+
+##### string.Format
+
+* [Equivalent of Python string.format in Go? - Stack Overflow](https://stackoverflow.com/questions/40811117/equivalent-of-python-string-format-in-go)
+
+
+##### http请求
+
+* [rest - How do I send a JSON string in a POST request in Go - Stack Overflow](https://stackoverflow.com/questions/24455147/how-do-i-send-a-json-string-in-a-post-request-in-go)
+* [【GoLang】golang HTTP GET/POST JSON的服务端、客户端示例，包含序列化、反序列化 - junneyang - 博客园](https://www.cnblogs.com/junneyang/p/6211190.html)
+* [Golang语言Post发送 json形式的请求 - Corwien - SegmentFault 思否](https://segmentfault.com/a/1190000008624328)
+* [golang net/http包使用 · Golang学习室 · 看云](https://www.kancloud.cn/digest/batu-go/153529)
+
+##### json操作
+
+* 
+
