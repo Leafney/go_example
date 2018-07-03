@@ -263,8 +263,10 @@ func main() {
 
 ##### gomail
 
-* [Golang 使用gomail包发送邮件 - CSDN博客](https://blog.csdn.net/wj199395/article/details/75206501)
 * [go-gomail/gomail: The best way to send emails in Go.](https://github.com/go-gomail/gomail)
+* [models/Mailer.go · qiqi/mailsrv - 码云 - 开源中国](https://gitee.com/zhucheer/mailsrv/blob/master/models/Mailer.go)
+* [Golang 使用gomail包发送邮件 - CSDN博客](https://blog.csdn.net/wj199395/article/details/75206501)
+
 
 ***
 
