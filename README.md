@@ -111,11 +111,27 @@ func main() {
 * [golang中执行定时任务的包—cron - CSDN博客](https://blog.csdn.net/skh2015java/article/details/78223951)
 * [Go实战--golang中执行cron job定时任务(robfig/cron和jasonlvhit/gocron) - 程序园](http://www.voidcn.com/article/p-ckjvqtxh-bnu.html) **☆**
 * [golang crontab的计划任务及定时任务使用 | 峰云就她了](http://xiaorui.cc/2016/03/03/golang-crontab%E7%9A%84%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%E5%8F%8A%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%BD%BF%E7%94%A8/)
+* [jakecoffman/cron: a cron library for go, updated to have removable jobs](https://github.com/jakecoffman/cron) **优化版本：把任务的结构体里增加了name string字段，这就让所有任务都有了一个唯一标示，借助他的RemoveJob function可以轻松根据唯一标示动态删除计划任务。**
 
+Todo :动态新增和移除定时任务
 
 ###### gocron
 
 * [ouqiang/gocron: 定时任务管理系统](https://github.com/ouqiang/gocron)
+
+###### PPGo_Job
+
+* [george518/PPGo_Job: 定时任务管理-支持多台服务器](https://github.com/george518/PPGo_Job)
+
+###### wechat_pusher
+
+* [hundredlee/wechat_pusher: a wechat message push framework base on golang](https://github.com/hundredlee/wechat_pusher)
+* [wechat_pusher : 基于Golang开发的微信消息定时推送框架 - Go中国技术社区 - golang](https://gocn.vip/article/359)
+
+###### cronsun
+
+* [shunfei/cronsun: A Distributed, Fault-Tolerant Cron-Style Job System.](https://github.com/shunfei/cronsun)
+
 
 ##### time
 
