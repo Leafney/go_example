@@ -113,6 +113,12 @@ func main() {
 * [golang crontab的计划任务及定时任务使用 | 峰云就她了](http://xiaorui.cc/2016/03/03/golang-crontab%E7%9A%84%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%E5%8F%8A%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%BD%BF%E7%94%A8/)
 * [jakecoffman/cron: a cron library for go, updated to have removable jobs](https://github.com/jakecoffman/cron) **优化版本：把任务的结构体里增加了name string字段，这就让所有任务都有了一个唯一标示，借助他的RemoveJob function可以轻松根据唯一标示动态删除计划任务。**
 
+###### robfig/cron扩展
+
+* [golang /robfig/cron库 的学习笔记 – 一个买错域名的站点](http://chuquanl.com/golang-cron%E7%AE%80%E4%BB%8B%E5%8F%8A%E4%BD%BFcron%E6%94%AF%E6%8C%81%E5%B8%A6%E5%8F%82%E6%95%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E7%94%A8/) **带参数任务的实现，测试后发现不能执行,缺少一行方法的定义**
+* [让golang的cron库支持带事件参数的回调 - CSDN博客](https://blog.csdn.net/sryan/article/details/50129133)
+* [outman/dcron: Web crontab based on Golang. (Just for study, don't use it on production env.)](https://github.com/outman/dcron)
+
 Todo :动态新增和移除定时任务
 
 ###### gocron
@@ -120,6 +126,8 @@ Todo :动态新增和移除定时任务
 * [ouqiang/gocron: 定时任务管理系统](https://github.com/ouqiang/gocron)
 
 ###### PPGo_Job
+
+对源 robfig/cron 做了修改
 
 * [george518/PPGo_Job: 定时任务管理-支持多台服务器](https://github.com/george518/PPGo_Job)
 
@@ -132,6 +140,9 @@ Todo :动态新增和移除定时任务
 
 * [shunfei/cronsun: A Distributed, Fault-Tolerant Cron-Style Job System.](https://github.com/shunfei/cronsun)
 
+###### jobrunner
+
+* [bamzi/jobrunner: Framework for performing work asynchronously, outside of the request flow](https://github.com/bamzi/jobrunner)
 
 ##### time
 
@@ -145,6 +156,7 @@ currentTime = time.Now().Format("2006-01-02 15:04:05")
 * [kardianos/service: Run go programs as a service on major platforms.](https://github.com/kardianos/service)
 * [我第1个可用的golang小程序 - 老匡的个人空间 - 开源中国](https://my.oschina.net/u/130746/blog/226050) **☆**
 * [golang以服务方式运行 - Minho - 开源中国](https://my.oschina.net/idufei/blog/710885) 
+* [golang程序在windows上，注册为服务 - CSDN博客](https://blog.csdn.net/yang8023tao/article/details/53332984)
 
 ##### windows SC命令详解
 
@@ -400,4 +412,17 @@ IsRename()
 ##### json操作
 
 * 
+
+##### govendor
+
+* [用 govendor 管理 Golang 第三方套件](https://seans.tw/2017/govendor-intro/)
+* [[Golang] govendor的使用 - 胡伟煌 | Blog](http://www.huweihuang.com/article/golang/govendor-usage/)
+* [go 依赖管理利器 -- govendor - CSDN博客](https://blog.csdn.net/yeasy/article/details/65935864)
+* [Go包管理工具Vendor使用教程 - CSDN博客](https://blog.csdn.net/benben_2015/article/details/80614873)
+* [govendor Golang依赖管理 | 能孩子](http://boyneng.com/2017/09/03/govendor%20golang%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/)
+* [kardianos/govendor: Go vendor tool that works with the standard vendor file.](https://github.com/kardianos/govendor)
+
+```
+go get -u -v github.com/kardianos/govendor
+```
 
